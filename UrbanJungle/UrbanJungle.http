@@ -1,0 +1,6 @@
+@UrbanJungle_HostAddress = http://localhost:5030
+
+GET {{UrbanJungle_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
