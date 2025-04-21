@@ -1,8 +1,8 @@
 ﻿using UrbanJungle.Domain.Enums;
 
-namespace UrbanJungle.Domain.Entities
+namespace UrbanJungle.Application.Models.PlantModels
 {
-    public class Plant : BaseEntity
+    public class PlantResponse
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
@@ -11,7 +11,7 @@ namespace UrbanJungle.Domain.Entities
         public string ImageUrl { get; set; } = string.Empty;
         public int StockQuantity { get; set; }
         public PlantType PlantType { get; set; }
-        public int CategoryId { get; set; }
-        public Category? Category { get; set; }
+        public int? CategoryId { get; set; }
+        public string CategoryName { get; set; } = string.Empty;
     }
 }
